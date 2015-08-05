@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AnE-6Y-7xD">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jxe-9X-yoG"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="AnE-6Y-7xD" secondAttribute="bottom" id="PRr-9K-bQi"/>
+                            <constraint firstItem="AnE-6Y-7xD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vgi-tg-c2i"/>
+                            <constraint firstItem="AnE-6Y-7xD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fNe-gp-ANU"/>
+                            <constraint firstAttribute="trailing" secondItem="AnE-6Y-7xD" secondAttribute="trailing" id="jRU-zT-Ll9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="AnE-6Y-7xD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="PRr-9K-bQi"/>
+                                <exclude reference="Vgi-tg-c2i"/>
+                                <exclude reference="fNe-gp-ANU"/>
+                                <exclude reference="jRU-zT-Ll9"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="AnE-6Y-7xD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="PRr-9K-bQi"/>
+                                <include reference="Vgi-tg-c2i"/>
+                                <include reference="fNe-gp-ANU"/>
+                                <include reference="jRU-zT-Ll9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="_webView" destination="AnE-6Y-7xD" id="TGM-R9-uim"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

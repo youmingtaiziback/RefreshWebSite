@@ -1,0 +1,14 @@
+# Uncomment this line to define a global platform for your project
+
+source 'https://gitcafe.com/akuandev/Specs.git'
+platform :ios, '6.0'
+
+target 'LocateURL' do
+pod "ObjectiveGumbo", "0.1"
+pod 'Reachability', '~> 3.2'
+end
+
+target 'LocateURLTests' do
+
+end
+

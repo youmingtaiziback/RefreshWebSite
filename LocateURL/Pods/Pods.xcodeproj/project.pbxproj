@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0479D484C608BA557124DFF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE66764FB590E0EB11A6E71D /* Foundation.framework */; };
+		0AEE71B35804A528C81C9F31 /* string_piece.h in Headers */ = {isa = PBXBuildFile; fileRef = C064CDA0D60CBA1DF3671F69 /* string_piece.h */; };
+		0F3213DFAA62A1282B6B8493 /* OGNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 041AD076A14F8BAC9C8B4AA2 /* OGNode.h */; };
+		215910034C65E0829B9FC4F7 /* gumbo.h in Headers */ = {isa = PBXBuildFile; fileRef = E74DCE1641A37E9CE6EB9B3E /* gumbo.h */; };
+		2280305C04927D6326B967DC /* OGNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E3C7BE41174DA919D1F9FF /* OGNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		27DE71710E44F8004DA7BBD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE66764FB590E0EB11A6E71D /* Foundation.framework */; };
+		283E0B6E321FA87E7F9F0259 /* OGElement.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CD344FDB8BD8C4B5A8520C /* OGElement.h */; };
+		31E007C548E94B99115B50BC /* char_ref.c in Sources */ = {isa = PBXBuildFile; fileRef = 38DC25945B4B7E26437A307C /* char_ref.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		32770CC9A24985643E9F5253 /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 69B707E7740ADB891A003D25 /* error.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5847361E9C80B15A3981BA2F /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 47B2541640FE8261CB76265D /* utf8.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5A2D797397768DDBEAA72834 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5E696C84260006091EDB7B /* SystemConfiguration.framework */; };
+		5EA99EEFB27D4E914B3BC260 /* tokenizer_states.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CC346CF7D70F3DBEBE8FCC3 /* tokenizer_states.h */; };
+		64C55B42F111FBE5403C9F5F /* ObjectiveGumbo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D32AB721A97F6C710CB7AEF /* ObjectiveGumbo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		72375FBCFCB9445CACA8F4C3 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = B732C5D7395E90887A61F9C8 /* Reachability.h */; };
+		76DA16F5C25064F4A39309A9 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = C11C865DC35C6C8424A01956 /* util.h */; };
+		77B095AE91B16E80DCA421CD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CE81EA72AF9BF80B7A4ACD /* Reachability.m */; };
+		7C2590276E90B2B97E50567F /* OGText.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E5791E136068A5B15058E0 /* OGText.h */; };
+		82F51CA45F2ECACC9964C0E3 /* OGUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC30BEE9413E23282EAA6E4 /* OGUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8701C6B372DA330D2AE86FA5 /* Pods-LocateURL-Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B23BEB4613626B0C99BD09 /* Pods-LocateURL-Reachability-dummy.m */; };
+		9597459CDBD73D39B477C5FF /* OGElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 49445BB61C49CF221F20C51E /* OGElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		96F27C6F3975282B0A10130B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE66764FB590E0EB11A6E71D /* Foundation.framework */; };
+		A92EBADB3DAB75374DC1809F /* Pods-LocateURL-ObjectiveGumbo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0D664343EF8D0BF5F00A90 /* Pods-LocateURL-ObjectiveGumbo-dummy.m */; };
+		AA5DD02D0A734BC305CDEA85 /* tokenizer.c in Sources */ = {isa = PBXBuildFile; fileRef = E76DAE3D90B9ED431DC3A9D2 /* tokenizer.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AE8C8EF38F6F6F02DD6E444C /* attribute.h in Headers */ = {isa = PBXBuildFile; fileRef = A9994516EFDC419ADD863F8D /* attribute.h */; };
+		B813C6FF994B9C6A38B5BCA9 /* token_type.h in Headers */ = {isa = PBXBuildFile; fileRef = 1442FFA275D69BFC13CC537A /* token_type.h */; };
+		BB99FC70061CC3863DC83A2A /* OGUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF80D99B4B4972933C3FC6E /* OGUtility.h */; };
+		BC48203747FABAD08321C52E /* string_piece.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C2295AAB3CDFA6A9660BEDB /* string_piece.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BE996BD7098F4FC0985752AA /* char_ref.h in Headers */ = {isa = PBXBuildFile; fileRef = 1504D59DC99516B6172110E1 /* char_ref.h */; };
+		C758094AFA5477AB7C1C7D0A /* NSString+OGString.m in Sources */ = {isa = PBXBuildFile; fileRef = 30929FA3C5CC8DB74A1819B9 /* NSString+OGString.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CCB007833DFF9FFF1BA0FFF8 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A37C9625CB2F86CCD04C7AF /* util.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CD0FF5BCE936454B78F5EE5F /* OGDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CE33103ACE3FFC2E8144BD /* OGDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CE23D6D8BA49EABBD69D1CFA /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FC9969F63A69D9E578B8A /* vector.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D2132A0E0A538F04734F53A1 /* vector.h in Headers */ = {isa = PBXBuildFile; fileRef = F099B402005F2DE4C40DC28D /* vector.h */; };
+		D2EED1DD77FCCE1D15AE17F2 /* NSString+OGString.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FDA5E8AEA085A640C2C9A1 /* NSString+OGString.h */; };
+		D35241FE9CC2A20F696FCF58 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B5A9E6B7258E0FF815A7530 /* utf8.h */; };
+		D63CA4224D28B49B3317A69C /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = C90CF6564E4210B4ECB86B58 /* parser.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DDAFF122F483DC2E1312D345 /* tag.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BB4CDC5D09F2C107CB52E70 /* tag.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E15B33017B996B2AC947E9B4 /* tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 303B6BC2D38FDCD38051E1D3 /* tokenizer.h */; };
+		E2053F510E3C0C04CDB4CB8E /* OGDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = AFEF50E6D61F49C4A69CEBDD /* OGDocument.h */; };
+		F0F3A82E8CEB5A66A988C064 /* OGText.m in Sources */ = {isa = PBXBuildFile; fileRef = DB63D0F82CBCB576F8C17C75 /* OGText.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F21DDD53A2AC3BACF92A7F5E /* string_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = F9BE7A0055662A581671F77C /* string_buffer.h */; };
+		F2BFC7375EC44DDE2312CB8A /* attribute.c in Sources */ = {isa = PBXBuildFile; fileRef = 79E25EB2246D0101EA4E797B /* attribute.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F3E2E55E712B6FA7A1238892 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 210A2377496B383D67398B38 /* parser.h */; };
+		F7679FEF686CB7567D66B9FA /* string_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = C37B88682D267AFD62E1DDF4 /* string_buffer.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FCB245DB310324BF728C2457 /* insertion_mode.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D4FFA9A5288282C214B3D7 /* insertion_mode.h */; };
+		FD10E6697C405F16547B3B74 /* Pods-LocateURL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8503DCF8B09D28D128043DAF /* Pods-LocateURL-dummy.m */; };
+		FE66C190C26113206BA79237 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A908DBB28BBEBD47C691A1 /* error.h */; };
+		FEAEB0334EBC73D9BC93FD8F /* ObjectiveGumbo.h in Headers */ = {isa = PBXBuildFile; fileRef = D7256A8D96A70D94F833C5D6 /* ObjectiveGumbo.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24B735DCA442BAC985C8262D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57D26867ABD6B8BB4151CEA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06DC048C6BAF26A36A83ADCE;
+			remoteInfo = "Pods-LocateURL-Reachability";
+		};
+		4C0046763D8502917A851070 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57D26867ABD6B8BB4151CEA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A6C3336E523E0F2B8F2608A;
+			remoteInfo = "Pods-LocateURL-ObjectiveGumbo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		024748F8200D6F50522500AB /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		041AD076A14F8BAC9C8B4AA2 /* OGNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OGNode.h; path = ObjectiveGumbo/OGNode.h; sourceTree = "<group>"; };
+		04E5791E136068A5B15058E0 /* OGText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OGText.h; path = ObjectiveGumbo/OGText.h; sourceTree = "<group>"; };
+		0C5E696C84260006091EDB7B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		1442FFA275D69BFC13CC537A /* token_type.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = token_type.h; path = ObjectiveGumbo/Gumbo/token_type.h; sourceTree = "<group>"; };
+		14CE81EA72AF9BF80B7A4ACD /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1504D59DC99516B6172110E1 /* char_ref.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = char_ref.h; path = ObjectiveGumbo/Gumbo/char_ref.h; sourceTree = "<group>"; };
+		19E3C7BE41174DA919D1F9FF /* OGNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OGNode.m; path = ObjectiveGumbo/OGNode.m; sourceTree = "<group>"; };
+		1B64D43155FBF9ED08C8380F /* libPods-LocateURL-Reachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocateURL-Reachability.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA5D5822B88E105F0331BF6 /* Pods-LocateURL-Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocateURL-Reachability-prefix.pch"; sourceTree = "<group>"; };
+		210A2377496B383D67398B38 /* parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parser.h; path = ObjectiveGumbo/Gumbo/parser.h; sourceTree = "<group>"; };
+		22F8DEA947728894BFCAFDEA /* Pods-LocateURL-ObjectiveGumbo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateURL-ObjectiveGumbo.xcconfig"; sourceTree = "<group>"; };
+		2C2295AAB3CDFA6A9660BEDB /* string_piece.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = string_piece.c; path = ObjectiveGumbo/Gumbo/string_piece.c; sourceTree = "<group>"; };
+		2CC346CF7D70F3DBEBE8FCC3 /* tokenizer_states.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tokenizer_states.h; path = ObjectiveGumbo/Gumbo/tokenizer_states.h; sourceTree = "<group>"; };
+		303B6BC2D38FDCD38051E1D3 /* tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tokenizer.h; path = ObjectiveGumbo/Gumbo/tokenizer.h; sourceTree = "<group>"; };
+		30929FA3C5CC8DB74A1819B9 /* NSString+OGString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+OGString.m"; path = "ObjectiveGumbo/NSString+OGString.m"; sourceTree = "<group>"; };
+		33A908DBB28BBEBD47C691A1 /* error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = error.h; path = ObjectiveGumbo/Gumbo/error.h; sourceTree = "<group>"; };
+		38DC25945B4B7E26437A307C /* char_ref.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = char_ref.c; path = ObjectiveGumbo/Gumbo/char_ref.c; sourceTree = "<group>"; };
+		47B2541640FE8261CB76265D /* utf8.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = utf8.c; path = ObjectiveGumbo/Gumbo/utf8.c; sourceTree = "<group>"; };
+		49445BB61C49CF221F20C51E /* OGElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OGElement.m; path = ObjectiveGumbo/OGElement.m; sourceTree = "<group>"; };
+		4D32AB721A97F6C710CB7AEF /* ObjectiveGumbo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjectiveGumbo.m; path = ObjectiveGumbo/ObjectiveGumbo.m; sourceTree = "<group>"; };
+		5A37C9625CB2F86CCD04C7AF /* util.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = util.c; path = ObjectiveGumbo/Gumbo/util.c; sourceTree = "<group>"; };
+		69B707E7740ADB891A003D25 /* error.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = error.c; path = ObjectiveGumbo/Gumbo/error.c; sourceTree = "<group>"; };
+		6E7095EC6B38B1E7A69134CC /* Pods-LocateURL-Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateURL-Reachability.xcconfig"; sourceTree = "<group>"; };
+		79E25EB2246D0101EA4E797B /* attribute.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = attribute.c; path = ObjectiveGumbo/Gumbo/attribute.c; sourceTree = "<group>"; };
+		7BB4CDC5D09F2C107CB52E70 /* tag.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = tag.c; path = ObjectiveGumbo/Gumbo/tag.c; sourceTree = "<group>"; };
+		7DE30FD895733AEC3EC99A2D /* Pods-LocateURL-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocateURL-acknowledgements.markdown"; sourceTree = "<group>"; };
+		84FDA5E8AEA085A640C2C9A1 /* NSString+OGString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+OGString.h"; path = "ObjectiveGumbo/NSString+OGString.h"; sourceTree = "<group>"; };
+		8503DCF8B09D28D128043DAF /* Pods-LocateURL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocateURL-dummy.m"; sourceTree = "<group>"; };
+		8A53F86CF5F2D9098003A6FC /* Pods-LocateURL-Reachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateURL-Reachability-Private.xcconfig"; sourceTree = "<group>"; };
+		8C1FC9969F63A69D9E578B8A /* vector.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = vector.c; path = ObjectiveGumbo/Gumbo/vector.c; sourceTree = "<group>"; };
+		8EB4EA5D77B76C8BF08E4608 /* Pods-LocateURL-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocateURL-environment.h"; sourceTree = "<group>"; };
+		8EF80D99B4B4972933C3FC6E /* OGUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OGUtility.h; path = ObjectiveGumbo/OGUtility.h; sourceTree = "<group>"; };
+		91C0DE662C9ADE1D66079165 /* Pods-LocateURL-ObjectiveGumbo-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateURL-ObjectiveGumbo-Private.xcconfig"; sourceTree = "<group>"; };
+		9B5A9E6B7258E0FF815A7530 /* utf8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utf8.h; path = ObjectiveGumbo/Gumbo/utf8.h; sourceTree = "<group>"; };
+		9E5E824E53E03DF8D484BD32 /* Pods-LocateURL-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocateURL-resources.sh"; sourceTree = "<group>"; };
+		9EC30BEE9413E23282EAA6E4 /* OGUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OGUtility.m; path = ObjectiveGumbo/OGUtility.m; sourceTree = "<group>"; };
+		A2D4FFA9A5288282C214B3D7 /* insertion_mode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = insertion_mode.h; path = ObjectiveGumbo/Gumbo/insertion_mode.h; sourceTree = "<group>"; };
+		A9994516EFDC419ADD863F8D /* attribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = attribute.h; path = ObjectiveGumbo/Gumbo/attribute.h; sourceTree = "<group>"; };
+		A9CD344FDB8BD8C4B5A8520C /* OGElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OGElement.h; path = ObjectiveGumbo/OGElement.h; sourceTree = "<group>"; };
+		AE66764FB590E0EB11A6E71D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AFEF50E6D61F49C4A69CEBDD /* OGDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OGDocument.h; path = ObjectiveGumbo/OGDocument.h; sourceTree = "<group>"; };
+		B732C5D7395E90887A61F9C8 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B8CE33103ACE3FFC2E8144BD /* OGDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OGDocument.m; path = ObjectiveGumbo/OGDocument.m; sourceTree = "<group>"; };
+		BED174728EC7B195E09836BA /* Pods-LocateURL-ObjectiveGumbo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocateURL-ObjectiveGumbo-prefix.pch"; sourceTree = "<group>"; };
+		C064CDA0D60CBA1DF3671F69 /* string_piece.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = string_piece.h; path = ObjectiveGumbo/Gumbo/string_piece.h; sourceTree = "<group>"; };
+		C0B23BEB4613626B0C99BD09 /* Pods-LocateURL-Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocateURL-Reachability-dummy.m"; sourceTree = "<group>"; };
+		C11C865DC35C6C8424A01956 /* util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util.h; path = ObjectiveGumbo/Gumbo/util.h; sourceTree = "<group>"; };
+		C37B88682D267AFD62E1DDF4 /* string_buffer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = string_buffer.c; path = ObjectiveGumbo/Gumbo/string_buffer.c; sourceTree = "<group>"; };
+		C5C1078E92D7E9608B0A24E2 /* libPods-LocateURL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocateURL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90CF6564E4210B4ECB86B58 /* parser.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = parser.c; path = ObjectiveGumbo/Gumbo/parser.c; sourceTree = "<group>"; };
+		C90DE9B659B30FC378356D3A /* libPods-LocateURL-ObjectiveGumbo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocateURL-ObjectiveGumbo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB2E8DF5826E0D0D1BDCB4F /* Pods-LocateURL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateURL.debug.xcconfig"; sourceTree = "<group>"; };
+		D7256A8D96A70D94F833C5D6 /* ObjectiveGumbo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectiveGumbo.h; path = ObjectiveGumbo/ObjectiveGumbo.h; sourceTree = "<group>"; };
+		DB63D0F82CBCB576F8C17C75 /* OGText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OGText.m; path = ObjectiveGumbo/OGText.m; sourceTree = "<group>"; };
+		E3C96AB9023186DA8C13F82D /* Pods-LocateURL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocateURL.release.xcconfig"; sourceTree = "<group>"; };
+		E74DCE1641A37E9CE6EB9B3E /* gumbo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gumbo.h; path = ObjectiveGumbo/Gumbo/gumbo.h; sourceTree = "<group>"; };
+		E76DAE3D90B9ED431DC3A9D2 /* tokenizer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = tokenizer.c; path = ObjectiveGumbo/Gumbo/tokenizer.c; sourceTree = "<group>"; };
+		E803C2C559F69EA3C01E4597 /* Pods-LocateURL-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocateURL-acknowledgements.plist"; sourceTree = "<group>"; };
+		F099B402005F2DE4C40DC28D /* vector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vector.h; path = ObjectiveGumbo/Gumbo/vector.h; sourceTree = "<group>"; };
+		F9BE7A0055662A581671F77C /* string_buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = string_buffer.h; path = ObjectiveGumbo/Gumbo/string_buffer.h; sourceTree = "<group>"; };
+		FF0D664343EF8D0BF5F00A90 /* Pods-LocateURL-ObjectiveGumbo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocateURL-ObjectiveGumbo-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F38DCAB8DE3DF54B9E7CEEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0479D484C608BA557124DFF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29AC73A43F193D917BD386B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F27C6F3975282B0A10130B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		873E4842613DE26DDCBEE990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DE71710E44F8004DA7BBD8 /* Foundation.framework in Frameworks */,
+				5A2D797397768DDBEAA72834 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		303D98F9E84C02FC967C6B46 /* Pods-LocateURL */ = {
+			isa = PBXGroup;
+			children = (
+				7DE30FD895733AEC3EC99A2D /* Pods-LocateURL-acknowledgements.markdown */,
+				E803C2C559F69EA3C01E4597 /* Pods-LocateURL-acknowledgements.plist */,
+				8503DCF8B09D28D128043DAF /* Pods-LocateURL-dummy.m */,
+				8EB4EA5D77B76C8BF08E4608 /* Pods-LocateURL-environment.h */,
+				9E5E824E53E03DF8D484BD32 /* Pods-LocateURL-resources.sh */,
+				CFB2E8DF5826E0D0D1BDCB4F /* Pods-LocateURL.debug.xcconfig */,
+				E3C96AB9023186DA8C13F82D /* Pods-LocateURL.release.xcconfig */,
+			);
+			name = "Pods-LocateURL";
+			path = "Target Support Files/Pods-LocateURL";
+			sourceTree = "<group>";
+		};
+		3C7EA9539DE38099D6DB3409 = {
+			isa = PBXGroup;
+			children = (
+				024748F8200D6F50522500AB /* Podfile */,
+				99E597071D2E3EAE5412E0A1 /* Frameworks */,
+				BFD9E0BFA1F37BD2153583E2 /* Pods */,
+				7861EB5FA109B4765844D8C8 /* Products */,
+				51A7AA09C53DE1E99FA2EFDC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		51A7AA09C53DE1E99FA2EFDC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				303D98F9E84C02FC967C6B46 /* Pods-LocateURL */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6B0817857E6D4FB168BC8339 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B732C5D7395E90887A61F9C8 /* Reachability.h */,
+				14CE81EA72AF9BF80B7A4ACD /* Reachability.m */,
+				93695939FAA63ADFAB79B6C6 /* Support Files */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		7861EB5FA109B4765844D8C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5C1078E92D7E9608B0A24E2 /* libPods-LocateURL.a */,
+				C90DE9B659B30FC378356D3A /* libPods-LocateURL-ObjectiveGumbo.a */,
+				1B64D43155FBF9ED08C8380F /* libPods-LocateURL-Reachability.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FEDCB063F41AA5EB1F535DF /* ObjectiveGumbo */ = {
+			isa = PBXGroup;
+			children = (
+				84FDA5E8AEA085A640C2C9A1 /* NSString+OGString.h */,
+				30929FA3C5CC8DB74A1819B9 /* NSString+OGString.m */,
+				AFEF50E6D61F49C4A69CEBDD /* OGDocument.h */,
+				B8CE33103ACE3FFC2E8144BD /* OGDocument.m */,
+				A9CD344FDB8BD8C4B5A8520C /* OGElement.h */,
+				49445BB61C49CF221F20C51E /* OGElement.m */,
+				041AD076A14F8BAC9C8B4AA2 /* OGNode.h */,
+				19E3C7BE41174DA919D1F9FF /* OGNode.m */,
+				04E5791E136068A5B15058E0 /* OGText.h */,
+				DB63D0F82CBCB576F8C17C75 /* OGText.m */,
+				8EF80D99B4B4972933C3FC6E /* OGUtility.h */,
+				9EC30BEE9413E23282EAA6E4 /* OGUtility.m */,
+				D7256A8D96A70D94F833C5D6 /* ObjectiveGumbo.h */,
+				4D32AB721A97F6C710CB7AEF /* ObjectiveGumbo.m */,
+				79E25EB2246D0101EA4E797B /* attribute.c */,
+				A9994516EFDC419ADD863F8D /* attribute.h */,
+				38DC25945B4B7E26437A307C /* char_ref.c */,
+				1504D59DC99516B6172110E1 /* char_ref.h */,
+				69B707E7740ADB891A003D25 /* error.c */,
+				33A908DBB28BBEBD47C691A1 /* error.h */,
+				E74DCE1641A37E9CE6EB9B3E /* gumbo.h */,
+				A2D4FFA9A5288282C214B3D7 /* insertion_mode.h */,
+				C90CF6564E4210B4ECB86B58 /* parser.c */,
+				210A2377496B383D67398B38 /* parser.h */,
+				C37B88682D267AFD62E1DDF4 /* string_buffer.c */,
+				F9BE7A0055662A581671F77C /* string_buffer.h */,
+				2C2295AAB3CDFA6A9660BEDB /* string_piece.c */,
+				C064CDA0D60CBA1DF3671F69 /* string_piece.h */,
+				7BB4CDC5D09F2C107CB52E70 /* tag.c */,
+				1442FFA275D69BFC13CC537A /* token_type.h */,
+				E76DAE3D90B9ED431DC3A9D2 /* tokenizer.c */,
+				303B6BC2D38FDCD38051E1D3 /* tokenizer.h */,
+				2CC346CF7D70F3DBEBE8FCC3 /* tokenizer_states.h */,
+				47B2541640FE8261CB76265D /* utf8.c */,
+				9B5A9E6B7258E0FF815A7530 /* utf8.h */,
+				5A37C9625CB2F86CCD04C7AF /* util.c */,
+				C11C865DC35C6C8424A01956 /* util.h */,
+				8C1FC9969F63A69D9E578B8A /* vector.c */,
+				F099B402005F2DE4C40DC28D /* vector.h */,
+				F2223FC49DF625228256A8AD /* Support Files */,
+			);
+			path = ObjectiveGumbo;
+			sourceTree = "<group>";
+		};
+		93695939FAA63ADFAB79B6C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E7095EC6B38B1E7A69134CC /* Pods-LocateURL-Reachability.xcconfig */,
+				8A53F86CF5F2D9098003A6FC /* Pods-LocateURL-Reachability-Private.xcconfig */,
+				C0B23BEB4613626B0C99BD09 /* Pods-LocateURL-Reachability-dummy.m */,
+				1DA5D5822B88E105F0331BF6 /* Pods-LocateURL-Reachability-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-LocateURL-Reachability";
+			sourceTree = "<group>";
+		};
+		99E597071D2E3EAE5412E0A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5D007CDF09E23C6FA1D60C7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5D007CDF09E23C6FA1D60C7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE66764FB590E0EB11A6E71D /* Foundation.framework */,
+				0C5E696C84260006091EDB7B /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BFD9E0BFA1F37BD2153583E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FEDCB063F41AA5EB1F535DF /* ObjectiveGumbo */,
+				6B0817857E6D4FB168BC8339 /* Reachability */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2223FC49DF625228256A8AD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				22F8DEA947728894BFCAFDEA /* Pods-LocateURL-ObjectiveGumbo.xcconfig */,
+				91C0DE662C9ADE1D66079165 /* Pods-LocateURL-ObjectiveGumbo-Private.xcconfig */,
+				FF0D664343EF8D0BF5F00A90 /* Pods-LocateURL-ObjectiveGumbo-dummy.m */,
+				BED174728EC7B195E09836BA /* Pods-LocateURL-ObjectiveGumbo-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-LocateURL-ObjectiveGumbo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		034806676247392C3152CC9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72375FBCFCB9445CACA8F4C3 /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E216CF83CEBA579C81B5D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EED1DD77FCCE1D15AE17F2 /* NSString+OGString.h in Headers */,
+				E2053F510E3C0C04CDB4CB8E /* OGDocument.h in Headers */,
+				283E0B6E321FA87E7F9F0259 /* OGElement.h in Headers */,
+				0F3213DFAA62A1282B6B8493 /* OGNode.h in Headers */,
+				7C2590276E90B2B97E50567F /* OGText.h in Headers */,
+				BB99FC70061CC3863DC83A2A /* OGUtility.h in Headers */,
+				FEAEB0334EBC73D9BC93FD8F /* ObjectiveGumbo.h in Headers */,
+				AE8C8EF38F6F6F02DD6E444C /* attribute.h in Headers */,
+				BE996BD7098F4FC0985752AA /* char_ref.h in Headers */,
+				FE66C190C26113206BA79237 /* error.h in Headers */,
+				215910034C65E0829B9FC4F7 /* gumbo.h in Headers */,
+				FCB245DB310324BF728C2457 /* insertion_mode.h in Headers */,
+				F3E2E55E712B6FA7A1238892 /* parser.h in Headers */,
+				F21DDD53A2AC3BACF92A7F5E /* string_buffer.h in Headers */,
+				0AEE71B35804A528C81C9F31 /* string_piece.h in Headers */,
+				B813C6FF994B9C6A38B5BCA9 /* token_type.h in Headers */,
+				E15B33017B996B2AC947E9B4 /* tokenizer.h in Headers */,
+				5EA99EEFB27D4E914B3BC260 /* tokenizer_states.h in Headers */,
+				D35241FE9CC2A20F696FCF58 /* utf8.h in Headers */,
+				76DA16F5C25064F4A39309A9 /* util.h in Headers */,
+				D2132A0E0A538F04734F53A1 /* vector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06DC048C6BAF26A36A83ADCE /* Pods-LocateURL-Reachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B47ED8E337EC64807AB3EF /* Build configuration list for PBXNativeTarget "Pods-LocateURL-Reachability" */;
+			buildPhases = (
+				3D38D9CDABD62CD17DAF9DC3 /* Sources */,
+				873E4842613DE26DDCBEE990 /* Frameworks */,
+				034806676247392C3152CC9A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LocateURL-Reachability";
+			productName = "Pods-LocateURL-Reachability";
+			productReference = 1B64D43155FBF9ED08C8380F /* libPods-LocateURL-Reachability.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0A6C3336E523E0F2B8F2608A /* Pods-LocateURL-ObjectiveGumbo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AD3FDE6D4B16313AB25F089 /* Build configuration list for PBXNativeTarget "Pods-LocateURL-ObjectiveGumbo" */;
+			buildPhases = (
+				D34BC2B9BEDD9431A8282B3A /* Sources */,
+				1F38DCAB8DE3DF54B9E7CEEB /* Frameworks */,
+				87E216CF83CEBA579C81B5D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LocateURL-ObjectiveGumbo";
+			productName = "Pods-LocateURL-ObjectiveGumbo";
+			productReference = C90DE9B659B30FC378356D3A /* libPods-LocateURL-ObjectiveGumbo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		382835B2F4A5CFCB11D1FDDF /* Pods-LocateURL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D5982B71D5EB8EDCCBE84C3 /* Build configuration list for PBXNativeTarget "Pods-LocateURL" */;
+			buildPhases = (
+				4912B40A70E33E061BE47FDB /* Sources */,
+				29AC73A43F193D917BD386B1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9653231675C53CC7D07805B6 /* PBXTargetDependency */,
+				D484BA6ED67107B97814C089 /* PBXTargetDependency */,
+			);
+			name = "Pods-LocateURL";
+			productName = "Pods-LocateURL";
+			productReference = C5C1078E92D7E9608B0A24E2 /* libPods-LocateURL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57D26867ABD6B8BB4151CEA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 0BFAF016C31183974D417BF6 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C7EA9539DE38099D6DB3409;
+			productRefGroup = 7861EB5FA109B4765844D8C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				382835B2F4A5CFCB11D1FDDF /* Pods-LocateURL */,
+				0A6C3336E523E0F2B8F2608A /* Pods-LocateURL-ObjectiveGumbo */,
+				06DC048C6BAF26A36A83ADCE /* Pods-LocateURL-Reachability */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D38D9CDABD62CD17DAF9DC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8701C6B372DA330D2AE86FA5 /* Pods-LocateURL-Reachability-dummy.m in Sources */,
+				77B095AE91B16E80DCA421CD /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4912B40A70E33E061BE47FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD10E6697C405F16547B3B74 /* Pods-LocateURL-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34BC2B9BEDD9431A8282B3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C758094AFA5477AB7C1C7D0A /* NSString+OGString.m in Sources */,
+				CD0FF5BCE936454B78F5EE5F /* OGDocument.m in Sources */,
+				9597459CDBD73D39B477C5FF /* OGElement.m in Sources */,
+				2280305C04927D6326B967DC /* OGNode.m in Sources */,
+				F0F3A82E8CEB5A66A988C064 /* OGText.m in Sources */,
+				82F51CA45F2ECACC9964C0E3 /* OGUtility.m in Sources */,
+				64C55B42F111FBE5403C9F5F /* ObjectiveGumbo.m in Sources */,
+				A92EBADB3DAB75374DC1809F /* Pods-LocateURL-ObjectiveGumbo-dummy.m in Sources */,
+				F2BFC7375EC44DDE2312CB8A /* attribute.c in Sources */,
+				31E007C548E94B99115B50BC /* char_ref.c in Sources */,
+				32770CC9A24985643E9F5253 /* error.c in Sources */,
+				D63CA4224D28B49B3317A69C /* parser.c in Sources */,
+				F7679FEF686CB7567D66B9FA /* string_buffer.c in Sources */,
+				BC48203747FABAD08321C52E /* string_piece.c in Sources */,
+				DDAFF122F483DC2E1312D345 /* tag.c in Sources */,
+				AA5DD02D0A734BC305CDEA85 /* tokenizer.c in Sources */,
+				5847361E9C80B15A3981BA2F /* utf8.c in Sources */,
+				CCB007833DFF9FFF1BA0FFF8 /* util.c in Sources */,
+				CE23D6D8BA49EABBD69D1CFA /* vector.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9653231675C53CC7D07805B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LocateURL-ObjectiveGumbo";
+			target = 0A6C3336E523E0F2B8F2608A /* Pods-LocateURL-ObjectiveGumbo */;
+			targetProxy = 4C0046763D8502917A851070 /* PBXContainerItemProxy */;
+		};
+		D484BA6ED67107B97814C089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LocateURL-Reachability";
+			target = 06DC048C6BAF26A36A83ADCE /* Pods-LocateURL-Reachability */;
+			targetProxy = 24B735DCA442BAC985C8262D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1917E3F247381A444ABF664E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27E3A656B583A965D7B93498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A53F86CF5F2D9098003A6FC /* Pods-LocateURL-Reachability-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LocateURL-Reachability/Pods-LocateURL-Reachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		31093942F3A972883952E4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C0DE662C9ADE1D66079165 /* Pods-LocateURL-ObjectiveGumbo-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LocateURL-ObjectiveGumbo/Pods-LocateURL-ObjectiveGumbo-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		61A880E6B7DEFF9943ABB782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB2E8DF5826E0D0D1BDCB4F /* Pods-LocateURL.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		69A948CA3090403FE346E891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C96AB9023186DA8C13F82D /* Pods-LocateURL.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8ADB7338DAF715239751706C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C0DE662C9ADE1D66079165 /* Pods-LocateURL-ObjectiveGumbo-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LocateURL-ObjectiveGumbo/Pods-LocateURL-ObjectiveGumbo-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A902081F86199FCB49863AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C02634B9B874BBC4994CE26F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A53F86CF5F2D9098003A6FC /* Pods-LocateURL-Reachability-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LocateURL-Reachability/Pods-LocateURL-Reachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03B47ED8E337EC64807AB3EF /* Build configuration list for PBXNativeTarget "Pods-LocateURL-Reachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E3A656B583A965D7B93498 /* Debug */,
+				C02634B9B874BBC4994CE26F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BFAF016C31183974D417BF6 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A902081F86199FCB49863AAE /* Debug */,
+				1917E3F247381A444ABF664E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D5982B71D5EB8EDCCBE84C3 /* Build configuration list for PBXNativeTarget "Pods-LocateURL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61A880E6B7DEFF9943ABB782 /* Debug */,
+				69A948CA3090403FE346E891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AD3FDE6D4B16313AB25F089 /* Build configuration list for PBXNativeTarget "Pods-LocateURL-ObjectiveGumbo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ADB7338DAF715239751706C /* Debug */,
+				31093942F3A972883952E4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57D26867ABD6B8BB4151CEA1 /* Project object */;
+}
